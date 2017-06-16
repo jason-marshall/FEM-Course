@@ -1,0 +1,235 @@
+\documentclass[12pt,letterpaper]{article}  
+
+\usepackage{termcal}
+\usepackage{longtable}
+\usepackage{ifthen}
+\usepackage{sectsty}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{enumitem}
+\setlist{nolistsep}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+% section sizing
+\sectionfont{\large}
+\subsectionfont{\normalsize}
+
+% title
+\begin{center}
+ {\Large \bf Course Num TBD - Finite Element Method - Fall 2017
+  \newline 
+  \newline Syllabus}
+\end{center}
+
+% first section
+\section{Logistics}
+% first column
+\begin{minipage}[t]{0.5\textwidth}
+\subsection*{Instructor}
+Jason Marshall\\
+Location TBD\\
+jmarshal@caltech.edu
+
+\subsection*{Instructor Office Hours:}
+TBD\\
+Other times available by appointment
+
+\subsection*{Prerequisites:}
+TBD\\
+\end{minipage}
+%second column
+\begin{minipage}[t]{0.5\textwidth}
+\subsection*{Class Time and Location}
+Two 50 minute classes on TBD and TBD\\
+One 3 hour lab on TBD
+\subsection*{Textbooks}
+Hughes, Thomas J.R. \emph{The Finite Element Method - Linear Static and Dynamic Finite Element Analysis.} Mineola, NY:Dover Publications, Inc. 2000 \\
+2nd book, TBD
+\end{minipage}
+
+\subsection*{Course Website}
+https://github.com/jason-marshall/FEM-Course
+
+
+
+% second section
+\section{Overview}
+\subsection*{Course Description}
+The main purpose of this course is to introduce the fundamentals of the finite element method as a general technique for the numerical approximation of partial differential equations.
+The course will include all components of the method including: derivation from variational principles, shape functions, element types, numerical integration, assembly, and error analysis.
+An initial emphasis will be placed on linear second-order partial differential equations, specifically the heat equation and elasticity.
+Advanced topics may be discussed in lectures (time dependent), but will be investigated by individual students in their final project.
+There will be an additional emphasis placed on the development of a general FEM code for simulation and learning purposes.
+By the end of the class, a successful student will have a strong technical grasp on the mathematics behind the FEM and usable code for analyzing and investigating advanced topics in the solution of partial differential equations.
+
+\subsection*{Course Objectives}
+At the conclusion of the course, students will be able to:
+\begin{itemize}
+ \item understand the basic structure of the FEM
+ \item derive fundamental equations of the FEM from a given partial differential equation
+ \item code numerically efficient FEM routines
+ \item utilize the student developed computational framework for FEM to investigate advanced problems
+ \item articulate on paper and orally technical components of the FEM
+\end{itemize}
+
+
+\subsection*{Course Structure}
+\begin{center}
+    \begin{tabular}{ | c | p{7cm} | p{7cm} |}
+    \hline
+    Week & Lecture & Lab \\ \hline
+    1 & Overview of course and basic continuum mechanics& Introduction to the basics of Python, Git, and good coding practices\\ \hline
+    2 & Principle of minimum potential energy& Norms and basic error analysis\\ \hline
+    3 & Method of weighted residuals and Galerkin approximations& Matrix routines and operations\\ \hline
+    4 & Exam 1 and single element shape functions in 1-D& 1-D shape function routines\\ \hline
+    5 & Single element shape functions in 2-D and 3-D & 2-D and 3-D shape function routines\\\hline
+    6 & Single element numerical integration and error analysis & Gauss-Legendre integration routines\\\hline
+    7 & Single element numerical integration and error analysis & Zero energy modes and error analysis of shape function and integration combinations\\\hline
+    8 & Exam 2 and multiple element matrix assembly & Multiple element assembly routines \\\hline
+    9 & Multiple element matrix assembly and solution procedures & Body, surface, and point load routines \\\hline
+    10 & Axisymmetric formulations & Axisymmetric heat equation applications \\\hline
+    11 & Non-linear problems (if time) & Final project work \\\hline
+    12 & 4th-order problems (if time)& Final project work \\\hline
+    13 & Time-dependent problems (if time)& Final project work \\\hline
+    14 & Final project presentations & Final project presentations \\\hline
+    \end{tabular}
+\end{center}
+
+% third section
+\section{Assessment}
+\begin{center}
+    \begin{tabular}{ | c | c | p{5cm} |}
+    \hline
+    Item & Portion of Grade & Due Date \\ \hline
+    Lecture/Lab Homework (12)& 40\% & Approximately every week\\ \hline
+    Exams (2)& 30\% & Mid and end of term\\ \hline
+    Final Project& 30\% & TBD\\ 
+    \hline
+    \end{tabular}
+\end{center}
+\subsection*{Lecture/Lab Homework - 40\%}
+Homework problem sets will be assigned approximately every week on TBD.
+Assignments must be neat, legible, stapled in the top left corner, single-sided, and completed on engineering paper, if hand-written.
+Late assignments will be accepted until TBD before class, but the number of points earned on the assignment will be multiplied by a factor of 0.5.
+
+\subsection*{Exams - 30\%}
+Two exams will be given in the class.
+These exams will be comprehensive, but heavily weighted towards the newest material.
+Exams will be open note and open book.
+
+\subsection*{Final Project - 30\%}
+Each final project will be a unique task chosen by a group of 3-4 students with approval.
+The project will require background research into the chosen problem, devising a solution strategy, and implementing the solution within a group computational framework.
+Groups will prepare a final report and 20 minute presentation detailing their specific problem and solution strategies.
+More details about the project will be given at a later date.
+
+\subsection*{Final Grade}
+Your \emph{MINIMUM} final letter grade will be earned based on the following scale, though it may be increased depending on the class statistics:
+\begin{center}
+    \begin{tabular}{ | c | c |}
+    \hline
+    Percent & Grade \\ \hline
+    $>$90 & A \\ \hline
+    $>$80 & B \\ \hline
+    $>$70 & C \\ \hline
+    $>$60 & D \\ \hline
+    $<$60 & F \\
+    \hline
+    \end{tabular}
+\end{center}
+
+% fourth section
+\section{Policies}
+\subsection*{General Information}
+If you have any questions, have any issues that arise during the course, or need additional help for any reason (medical, personal, family, etc), please contact me.
+I am willing to provide additional help beyond the office hours and policies that are outlined in the syllabus.
+\subsection*{Email Correspondence}
+All emails to the instructor will be answered within 24 hours during the week, pending unforeseen circumstances.
+Emails the night before a homework assignment are due are only guaranteed to be answered if they are sent before 8pm.
+Email should be used mostly for administrative purposes.
+Technical questions can be challenging at times to answer over email, so if your question is technical, it will probably be best to schedule a meeting or to talk during office hours.
+\subsection*{Questions During Lecture}
+Questions during lecture are highly encouraged.
+Please feel free to ask questions at any point during the lecture.
+If you don't understand something, there is a very good chance several other students are confused as well.
+If I am in the middle of a train of thought, I may withhold answering the question until finished with the point or thought, but your question will be answered.
+\subsection*{Attendance and Illness}
+Attendance in class is highly, highly recommended and will be very helpful for learning and the completion of assignments.
+If an emergency arises (major illness, family issue, etc) do not worry about contacting me, take care of what needs to be done and any class issues will be sorted out upon your return.
+\subsection*{Technology Use}
+Please use any technology that helps you learn, but keep them quiet and avoid distractions to other students.
+If any issues arise with technology use they will be dealt with on a case by case basis.
+\subsection*{Academic Integrity}
+Plagiarism and cheating will not be tolerated.
+All university policies and procedures will be strictly enforced.
+Groups of students are allowed and encourage to work on and discuss homework assignments together, but everything in your assignment must be your own work.
+Copying of other students' assignments is strictly forbidden.
+
+\iffalse
+\section{Tentative Class Schedule}
+Note: Changes may be made to the schedule and lecture topics will be updated as they get closer.  
+All schedule updates will be on the website and will be communicated via email.
+\begin{calendar}{8/25/17}{14}
+\setlength{\calboxdepth}{.3in}
+\setlength{\calwidth}{\textwidth} 
+
+\calday[Monday]{\classday} % Monday
+
+\skipday % Tuesday
+
+\calday[Wednesday]{\classday}  % Wednesday
+
+\skipday  % Thursday
+
+\calday[Friday]{\classday} % Friday
+
+\skipday\skipday  % weekend
+
+% Holidays
+\options{9/1/14}{\noclassday}
+\caltext{9/1/14}{No Class\\Labor Day}
+\options{10/17/14}{\noclassday}
+\caltext{10/17/14}{No Class\\Mid-Semester Break}
+\options{11/26/14}{\noclassday}
+\caltext{11/26/14}{No Class\\Thanksgiving Break}
+\options{11/28/14}{\noclassday}
+\caltext{11/28/14}{No Class\\Thanksgiving Break}
+% Exams
+\caltext{9/22/14}{Tentative Exam 1}
+\caltext{10/20/14}{Tentative Exam 2}
+\caltext{11/17/14}{Tentative Exam 3}
+% Homeworks
+\caltext{8/29/14}{HW 1 Assigned}
+\caltext{9/5/14}{HW 1 Due, HW 2 Assigned}
+\caltext{9/12/14}{HW 2 Due, HW 3 Assigned}
+\caltext{9/19/14}{HW 3 Due}
+\caltext{9/26/14}{HW 4 Assigned}
+\caltext{10/3/14}{HW 4 Due, HW 5 Assigned}
+\caltext{10/10/14}{HW 5 Due, HW 6 Assigned}
+\caltext{10/15/14}{HW 6 Due, no late assignments accepted}
+\caltext{10/24/14}{HW 7 Assigned}
+\caltext{10/31/14}{HW 7 Due, HW 8 Assigned}
+\caltext{11/7/14}{HW 8 Due, HW 9 Assigned}
+\caltext{11/14/14}{HW 9 Due}
+\caltext{11/21/14}{HW 10 Assigned}
+\caltext{12/3/14}{HW 10 Due}
+\caltext{12/5/14}{HW 11 Assigned, not graded}
+
+% Text on consecutive days
+% the subject of the 9th lecture
+\caltexton{1}{Begin first unit on Stress/Strain}
+\caltexton{11}{Last day of Stress/Strain unit}
+\caltexton{13}{Begin second unit on Torsion, Bending, and Shearing}
+\caltexton{22}{Last day of Torsion, Bending, and Shearing unit}
+\caltexton{24}{Begin third unit on Beams}
+\caltexton{34}{Last day of Beams unit}
+\caltexton{36}{Begin fourth unit on special topics}
+\caltexton{41}{Last day of special topics unit}
+
+%\caltextnext{}
+\end{calendar}
+\fi
+\end{document}
